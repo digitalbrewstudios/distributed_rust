@@ -1,0 +1,14 @@
+[package]
+name = "distributed_rust"
+version = "0.1.0"
+authors = ["Distibuted Rust Contributors", "DigitalBrewStudios"]
+licence = "Apache-2.0 OR MIT"
+categories = ["distributed-rust", "distributed"]
+edition = "2024"
+
+[dependencies]
+ractor = { version = "0.15.6", features = ["cluster", "pot", "serde"] }
+ractor_cluster = "0.15.6"
+serde = { version = "1.0.219", features = ["derive"] }
+serde_derive = "1.0.219"
+tokio = { version = "1.46.1", features = ["full"] }
